@@ -10,7 +10,7 @@ export default function TaskInput() {
           </div>
           <div className="new-todo-input">
             <form action="">
-              <input type="text" placeholder='Create new todo' />
+              <input id="todo-input" type="text" placeholder='Create a new todo' />
             </form>
           </div>
     </div>
