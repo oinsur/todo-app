@@ -1,5 +1,6 @@
 import './App.css';
 import TaskInput from './components/TaskInput';
+import TaskList from './components/TaskList';
 
 function App() {
   return (
@@ -9,11 +10,11 @@ function App() {
           <h1>TODO</h1>
           <img src="./images/icon-sun.svg" alt="sun icon" />
         </div>
-        <div className="task-input">
-          <TaskInput/>
-        </div>
+        {/* TaskInput component */}
+        <TaskInput/>
 
-        <div className="task-list"></div>
+        {/* TaskList component */}
+        <TaskList/>
       </div>
     </div>
   );
