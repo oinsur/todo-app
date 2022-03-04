@@ -58,12 +58,15 @@
 .check-mark {
   width: 30px;
   height: 30px;
-  background-color: aliceblue;
   border-radius: 50%;
   border: 2px solid hsl(237, 14%, 26%) ;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.check-mark:hover {
+  background: linear-gradient(50deg, #2f2bb4, #771c76);
 }
 
 .new-todo-input {
@@ -89,7 +92,6 @@
 }
 
 .task-list-wrapper {
-  height: 400px;
   margin-top: 30px;
   border-radius: 6px;
   background-color: hsl(235, 24%, 19%);
@@ -110,4 +112,28 @@
   align-items: center;
   cursor: pointer;
   border-bottom: 1px solid hsl(237, 14%, 26%);
+  transition: all .5s;
+  transition-property: box-shadow, transform, border-color;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 7px 0 hsl(235, 21%, 11%);
+}
+
+.task-item p {
+  color: aliceblue;
+}
+.task-items-info {
+  width: 100%;
+  padding: 2% 0;
+  border-top: hsl(237, 14%, 26%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: hsl(235, 14%, 35%);
+}
+
+.item-statuses span {
+  padding: 0 4px;
 }

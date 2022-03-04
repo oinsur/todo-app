@@ -10,7 +10,7 @@ export default function Task() {
       </div>
 
       <div className="task-text">
-        <p>FINISH FRONTEND</p>
+        <p>ADD THE CHECK MARK CSS</p>
       </div>
     </div>
   )

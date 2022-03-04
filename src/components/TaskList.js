@@ -8,10 +8,6 @@ export default function TaskList() {
       <div className="task-list">
         {/* map through an array of todos and for every todo, create a task component */}
         <Task />
-        <Task />
-        <Task />
-        <Task />
-        <Task />
       </div>
 
       <div className="task-items-info">
