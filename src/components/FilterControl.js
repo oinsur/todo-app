@@ -6,7 +6,6 @@ export default function FilterControl() {
       <span>All</span>
       <span>Active</span>
       <span>Completed</span>
-      <span>Clear Completed</span>
     </div>
   )
 }
