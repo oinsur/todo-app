@@ -11,22 +11,30 @@ export default function Task({text, task}) {
     // task status should be switched
     // pull in the task in this function
   }
+  // create a variable to make the CSS of the cross-icon active
+  const makeActive = (e) => {
+    e.target.style.background = "#5a61af";
+  }
+  const makeInactive = (e) => {
+    e.target.style.background = "none";
+  }
 
   return (
-    <div className="task-item">
-      <div className="task-item-container">
+    // onMouseOver is the hover event
+    <div className="task-item" onMouseOver={makeActive} onMouseLeave = {makeInactive}>
+      <div className="task-text-container" onMouseLeave = {makeInactive}>
         <div className="check" onClick={markCompleted}>
           <div className="check-mark">
             <img src="./images/icon-check.svg" alt="check icon"></img>
           </div>
         </div>
 
-        <div className="task-text">
-          <p>{text}</p>
+        <div className="task-text" onMouseLeave = {makeInactive}>
+          <p onMouseLeave = {makeInactive}>{text}</p>
         </div>
       </div>
-      <div className="remove-item">
-        <img src="./images/icon-cross.svg" alt="cross icon"></img>
+      <div className="remove-item" onMouseLeave = {makeInactive}>
+        <img src="./images/icon-cross.svg" alt="cross icon" onMouseLeave = {makeInactive}></img>
       </div>
     </div>
   )
