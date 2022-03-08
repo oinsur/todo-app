@@ -65,6 +65,10 @@
   justify-content: center;
 }
 
+.check-mark.checked {
+  background: linear-gradient(50deg, #2f2bb4, #771c76);
+}
+
 .check-mark:hover {
   background: linear-gradient(50deg, #2f2bb4, #771c76);
 }
@@ -75,7 +79,7 @@
   transition: all .5s;
 }
 
-.check-mark img:hover {
+.check-mark img:hover, .check-mark.checked img {
   opacity: 1;
 }
 .new-todo-input {
@@ -139,6 +143,10 @@
   color: hsl(234, 39%, 85%);
 }
 
+.task-text.checked {
+  text-decoration: line-through;
+  color: hsl(233, 14%, 35%);  
+}
 .remove-item {
   margin-right: 5%;
   filter: brightness(1);
