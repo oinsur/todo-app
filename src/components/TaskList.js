@@ -2,7 +2,7 @@ import React from 'react'
 import FilterControl from './FilterControl'
 import Task from './Task'
 
-export default function TaskList({tasks, setTasks}) {
+export default function TaskList({tasks, setTasks, filterStatus, setFilterStatus}) {
   return (
     <div className="task-list-wrapper">
       <div className="task-list">
@@ -26,7 +26,9 @@ export default function TaskList({tasks, setTasks}) {
           5 items left
         </div>
         {/* FilterControl component */}
-        <FilterControl />
+        <FilterControl
+          filterStatus = {filterStatus}
+          setFilterStatus = {setFilterStatus} />
 
         <div className="items-clear">
           <span>Clear Compelted</span>

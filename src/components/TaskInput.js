@@ -48,4 +48,3 @@ export default function TaskInput({tasks, setTasks}) {
     </div>
   )
 }
-
